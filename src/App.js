@@ -17,6 +17,7 @@ export default function App() {
           <div className="header-icon" style={{ borderRadius: '50%', overflow: 'hidden' }}>🛒</div>          <div>
             <h1 className="app-title">Coles Pay Calculator</h1>
             <p className="app-sub">Calculate your weekly pay instantly</p>
+              <p className="app-sub">Create by Praman</p>
           </div>
         </div>
 
