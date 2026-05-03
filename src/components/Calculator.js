@@ -120,7 +120,7 @@ export default function Calculator() {
   const base = rates.base;
 
   // Display rates for each emp type
-  const displayRate    = empType === 'cas' ? base * 1.25 : base;
+  // const displayRate    = empType === 'cas' ? base * 1.25 : base;
   const rateOrdinary   = empType === 'cas' ? base * 1.25 : base;
   const rateSat        = empType === 'cas' ? base * 1.50 : base * 1.25;
   const rateSun        = empType === 'cas' ? base * 1.75 : base * 1.50;
