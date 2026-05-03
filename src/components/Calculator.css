@@ -1,0 +1,321 @@
+.emp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.emp-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 6px;
+  border: 1.5px solid #eee;
+  border-radius: 12px;
+  background: white;
+  gap: 4px;
+  transition: all 0.15s;
+}
+
+.emp-btn.active {
+  background: #fff0f0;
+  border-color: #e8222a;
+}
+
+.emp-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.emp-btn.active .emp-label { color: #e8222a; }
+
+.emp-rate {
+  font-size: 11px;
+  color: #999;
+}
+
+.emp-btn.active .emp-rate { color: #e8222a; opacity: 0.7; }
+
+.col-headers {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 44px 34px;
+  gap: 8px;
+  font-size: 11px;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 6px;
+}
+
+.day-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 44px 34px;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: background 0.1s;
+}
+
+.day-row.enabled {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+}
+
+.day-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.day-name.weekend { color: #e67e22; }
+
+.time-select {
+  width: 100%;
+  padding: 7px 4px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 12px;
+  background: white;
+  color: #333;
+}
+
+.time-select:disabled {
+  opacity: 0.3;
+  background: #fafafa;
+}
+
+.day-hrs {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  font-weight: 500;
+}
+
+.toggle-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: white;
+  font-size: 14px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.toggle-btn.on {
+  background: #e8222a;
+  color: white;
+  border-color: #e8222a;
+}
+
+.results-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.metric {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric.highlight { background: #fff0f0; }
+
+.metric-label {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.metric-value.green { color: #e8222a; }
+
+.breakdown { border-top: 1px solid #f5f5f5; padding-top: 0.75rem; }
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f9f9f9;
+  color: #555;
+}
+
+.breakdown-row.total {
+  border-bottom: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  padding-top: 10px;
+  margin-top: 4px;
+  border-top: 1px solid #eee;
+}
+
+.row-pay { font-weight: 600; color: #333; }
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.breakdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 0.75rem;
+}
+
+.breakdown-table th {
+  text-align: left;
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 6px 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.breakdown-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #f9f9f9;
+  color: #555;
+}
+
+.breakdown-table tbody tr:last-child td { border-bottom: none; }
+
+.breakdown-table tfoot td {
+  padding: 10px 6px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  border-top: 1px solid #eee;
+}
+
+.total-col {
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.day-tag { font-weight: 600; color: #333; }
+.day-tag.sat { color: #e67e22; }
+.day-tag.sun { color: #e8222a; }
+.row-sat { background: #fffbf5; }
+.row-sun { background: #fff5f5; }
+
+.badge.sat   { background: #fef9e7; color: #b7950b; }
+.badge.sun   { background: #fdecea; color: #c0392b; }
+.badge.night { background: #eaf0fb; color: #1a73e8; }
+.badge.ot    { background: #eafaf1; color: #1e8449; }
+
+.breakdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+.breakdown-table th {
+  text-align: left;
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 6px 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.breakdown-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #f9f9f9;
+  color: #555;
+}
+
+.breakdown-table tbody tr:last-child td { border-bottom: none; }
+
+.breakdown-table tfoot td {
+  padding: 10px 6px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  border-top: 1px solid #eee;
+}
+
+.total-col {
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.day-tag { font-weight: 600; color: #333; }
+.day-tag.sat { color: #e67e22; }
+.day-tag.sun { color: #e8222a; }
+.row-sat { background: #fffbf5; }
+.row-sun { background: #fff5f5; }
+
+.badge.pen150 { background: #eaf0fb; color: #1a73e8; }
+.badge.pen175 { background: #fdecea; color: #c0392b; }
+.badge.break  { background: #f5f0ff; color: #7c3aed; }
+.badge.ot     { background: #eafaf1; color: #1e8449; }
+
+.rate-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 0.75rem;
+  padding: 10px 12px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.rate-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.rate-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.rate-dot.ordinary { background: #1e8449; }
+.rate-dot.sat      { background: #e67e22; }
+.rate-dot.sun      { background: #e8222a; }
+
+.day-name.sunday { color: #e8222a; }
