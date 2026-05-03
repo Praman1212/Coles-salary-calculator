@@ -21,10 +21,11 @@
   background: #e8222a;
   width: 52px;
   height: 52px;
-  border-radius: 12px;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .app-title {

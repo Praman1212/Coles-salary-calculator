@@ -14,8 +14,7 @@ export default function App() {
       <div className="container">
 
         <div className="header">
-          <div className="header-icon">🛒</div>
-          <div>
+          <div className="header-icon" style={{ borderRadius: '50%', overflow: 'hidden' }}>🛒</div>          <div>
             <h1 className="app-title">Coles Pay Calculator</h1>
             <p className="app-sub">Calculate your weekly pay instantly</p>
           </div>
@@ -34,8 +33,8 @@ export default function App() {
         </div>
 
         {tab === 'calculator' && <Calculator />}
-        {tab === 'history'    && <History />}
-        {tab === 'admin'      && <Admin />}
+        {tab === 'history' && <History />}
+        {tab === 'admin' && <Admin />}
 
       </div>
     </div>
