@@ -64,6 +64,9 @@ export default function History() {
                 }}
               >×</button>
             </div>
+            <div>
+              Create by Praman
+            </div>
           </div>
         ))
       }
